@@ -7,22 +7,15 @@
     </head>
     <body id="container">
         <main id="main">
-            <link rel="stylesheet" href="./style.css"/>
             <header>
-                <div id="h-top">
-                    <img src="./images/freepik__a-favicon-icon-of-the-pzd-sanok-logo-subtly-emboss__20192.png" id="logo" alt="logo_PZD-Sanok"/>
-                    <h1>Powiatowy Zarząd Dróg w Sanoku</h1><br/>
-                </div>
-                <div id="h-bottom">
 
-                </div>
             </header>
             <aside>
                 <div>
                     <nav>
 
                     </nav>
-                    <form action="./code.php" method="post">
+                    <form action="#" method="post">
 
                     </form>
                     <div>

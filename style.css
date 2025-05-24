@@ -1,1 +1,17 @@
-
+body *{
+    box-sizing: border-box;
+}
+#logo{
+    width: 80px;
+    display: inline-block;
+}
+#h-top h1{
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    margin: 0%;
+}
+#h-top{
+    height:80px;
+}
