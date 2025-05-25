@@ -5,6 +5,9 @@
         <link rel="icon" id="favicon" type="image/x-icon" href="./images/favicon3.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
     </head>
     <body id="container">
         <main id="main">
@@ -26,41 +29,43 @@
                     </div>
                 </div>
             </header>
-            <div class="menu">    
-                <div class="slider">
-                    <div class="slides" id="slides">
-                    <img src="./images/cropped-baner1.png" alt="Obrazek 1">
-                    <img src="./images/cropped-baner2.png" alt="Obrazek 2">
-                    <img src="./images/cropped-baner3.png" alt="Obrazek 3">
+            <div id="strona">
+                <div id="menu">    
+                    <div class="slider">
+                        <div class="slides" id="slides">
+                        <img src="./images/cropped-baner1.png" alt="Obrazek 1">
+                        <img src="./images/cropped-baner2.png" alt="Obrazek 2">
+                        <img src="./images/cropped-baner3.png" alt="Obrazek 3">
+                        </div>
+                    </div>
+                    <script>
+                        const slides = document.getElementById('slides');
+                        const totalSlides = 3;
+                        let index = 0;
+
+                        setInterval(() => {
+                        index = (index + 1) % totalSlides;
+                        slides.style.transform = `translateX(-${310 * index}px)`;
+                        }, 3000); // zmiana co 3 sekundy
+                    </script>
+                    <nav>
+
+                    </nav>
+                    <form action="./code.php" method="post">
+
+                    </form>
+                    <div>
                     </div>
                 </div>
-                <script>
-                    const slides = document.getElementById('slides');
-                    const totalSlides = 3;
-                    let index = 0;
+                <aside class="content">   
+                    <div>
 
-                    setInterval(() => {
-                    index = (index + 1) % totalSlides;
-                    slides.style.transform = `translateX(-${311 * index}px)`;
-                    }, 3000); // zmiana co 3 sekundy
-                </script>
-                <nav>
+                    </div>
+                </aside>
+                <footer class="footer">
 
-                </nav>
-                <form action="./code.php" method="post">
-
-                </form>
-                <div>
-                </div>
+                </footer>
             </div>
-            <aside class="content">   
-                <div>
-
-                </div>
-            </aside>
-            <footer class="footer">
-
-            </footer>
         </main>
     </body>
 </html>
