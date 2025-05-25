@@ -9,16 +9,41 @@
     <body id="container">
         <main id="main">
             <link rel="stylesheet" href="./style.css"/>
-            <header class="header">
-                <div id="h-top">
+            <header>
+                <div id="h-left">
                     <a href="./index.html"><img src="./images/favicon3.png" id="logo" alt="logo_PZD-Sanok"/></a>
                     <a id="Name" href="./index.html"><h1>Powiatowy Zarząd Dróg w Sanoku</h1></a>
                 </div>
-                <div id="h-bottom">
+                <div id="h-right">
+                    <div id="hrd-1">
 
+                    </div>
+                    <div id="hrd-1">
+                        
+                    </div>
+                    <div id="hrd-1">
+                        
+                    </div>
                 </div>
             </header>
-            <div class="menu">
+            <div class="menu">    
+                <div class="slider">
+                    <div class="slides" id="slides">
+                    <img src="./images/cropped-baner1.png" alt="Obrazek 1">
+                    <img src="./images/cropped-baner2.png" alt="Obrazek 2">
+                    <img src="./images/cropped-baner3.png" alt="Obrazek 3">
+                    </div>
+                </div>
+                <script>
+                    const slides = document.getElementById('slides');
+                    const totalSlides = 3;
+                    let index = 0;
+
+                    setInterval(() => {
+                    index = (index + 1) % totalSlides;
+                    slides.style.transform = `translateX(-${311 * index}px)`;
+                    }, 3000); // zmiana co 3 sekundy
+                </script>
                 <nav>
 
                 </nav>
