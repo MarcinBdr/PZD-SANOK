@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nova+Square&display=swap" rel="stylesheet">
     </head>
     <body id="container">
         <main id="main">
@@ -38,22 +38,34 @@
                         <img src="./images/cropped-baner3.png" alt="Obrazek 3">
                         </div>
                     </div>
-                    <script>
-                        const slides = document.getElementById('slides');
-                        const totalSlides = 3;
-                        let index = 0;
-
-                        setInterval(() => {
-                        index = (index + 1) % totalSlides;
-                        slides.style.transform = `translateX(-${310 * index}px)`;
-                        }, 3000); // zmiana co 3 sekundy
-                    </script>
+                    <script src="./indexjs.js"></script>
+                    <input type="text" id="search" placeholder="🔍Szukaj...">
                     <nav>
-
+                        <ul id="menu-list" class="menu-menu">
+                            <li id="menu-item-1" class="menu"><a href="https://pzd.sanok.pl/ogloszenia/">Ogłoszenia</a></li>
+                            <li id="menu-item-2" class="menu"><a href="https://pzd.sanok.pl/do-pobrania/">Do pobrania</a></li>
+                            <li id="menu-item-3" class="menu"><a href="https://pzd.sanok.pl/kontakt/">Kontakt</a></li>
+                            <li id="menu-item-4" class="menu"><a href="https://pzd.sanok.pl/drogi-i-mosty/">Drogi i mosty</a></li>
+                            <li id="menu-item-5" class="menu"><a href="https://pzd.sanok.pl/bip/">BIP</a></li>
+                            <li id="menu-item-6" class="menu"><a href="https://pzd.sanok.pl/utrudnienia-w-ruchu/">Utrudnienia w ruchu</a></li>
+                            <li id="menu-item-7" class="menu"><a href="https://pzd.sanok.pl/informacje/">Informacje</a></li>
+                            <li id="menu-item-8" class="menu"><a href="https://pzd.sanok.pl/zima/">ZIMA</a></li>
+                            <li id="menu-item-9" class="menu"><a href="https://epuap.gov.pl/wps/portal/strefa-klienta/katalog-spraw/profil-urzedu/PZD_Sanok">ePUAP</a></li>
+                            <li id="menu-item-10" class="menu"><a href="https://pzd.sanok.pl/deklaracja-dostepnosci/">Deklaracja dostępności</a></li>
+                            <li id="menu-item-11" class="menu"><a href="https://pzd.sanok.pl/polityka-prywatnosci/">Polityka prywatności</a></li>
+                            <li id="menu-item-12" class="menu">
+                                <a href="...">Ostatnie</a>
+                                <ul class="menu-menu">
+                                    <li><a href="...">Zmiana nr rachunku</a></li>
+                                    <li><a href="...">Dzień wolny 13-11-2023r.</a></li>
+                                    <li><a href="...">Awaria telefonów</a></li>
+                                    <li><a href="...">Dzień wolny 24-12-2021r.</a></li>
+                                    <li><a href="...">Dzień wolny 02-04-2021r.</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </nav>
-                    <form action="./code.php" method="post">
-
-                    </form>
+                    
                     <div>
                     </div>
                 </div>

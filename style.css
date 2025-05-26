@@ -11,12 +11,14 @@ header{
     border-bottom-right-radius: 10px;
     position: fixed;
     top:0;
+    display: flex;
     width: 1100px;
     height: 120px;
     background-color: #1F2232;
 
 }
 #strona{
+    margin-right: 10px;
     margin-left: 10px;
     margin-top: 120px;
 }
@@ -27,6 +29,14 @@ header{
     background-color: #373C58;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+#menu-list{
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 5px;
+    margin-right: 6px;
+    margin-block-end: 5px;
+    background-color: #3b4477;
 }
 a #logo{
     width: 100px;
@@ -56,6 +66,24 @@ a #logo{
     font-style: normal;
     color: white;
 }
+.menu{
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+input{
+    padding: 10px;
+    background-color: #8f8f8f;
+    border-radius: 15px;
+    border: 0px;
+    margin-left: 5px;
+}
+
 @media only screen and (max-width: 768px){
     #container{
         background-color: black;
@@ -71,8 +99,11 @@ a #logo{
     position: relative;
     margin: 5px;
     margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 .slides {
+    border-radius: 5px;
     display: flex;
     width: calc(311px * 3);
     transition: transform 1s ease-in-out;
@@ -80,6 +111,10 @@ a #logo{
 .slides img {
     width: 310px;
     height: 197px;
+    border-radius: 5px;
+}
+.hidden{
+    display: none;
 }
 
 
